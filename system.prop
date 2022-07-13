@@ -6,8 +6,9 @@ ro.audio.monitorRotation=true
 
 # Bluetooth
 bt.max.hfpclient.connections=1
-vendor.bluetooth.soc=cherokee
+persist.vendor.btstack.enable.twsplus=true
 ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.bluetooth.soc=cherokee
 
 # Camera
 sys.camera.packagename.zui=1
