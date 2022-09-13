@@ -162,6 +162,10 @@ on boot
 
     setprop net.tcp.2g_init_rwnd 10
 
+    # Smart Charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
     # To prevent out of order acknowledgements from making
     # connection tracking to treat them as not belonging to
     # the connection they belong to.
