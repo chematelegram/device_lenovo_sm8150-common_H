@@ -162,6 +162,10 @@ on boot
 
     setprop net.tcp.2g_init_rwnd 10
 
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
     # Smart Charging
     chown system system /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/input_suspend
