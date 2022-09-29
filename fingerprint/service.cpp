@@ -42,12 +42,12 @@ status_t BiometricsFingerprint::registerAsSystemService() {
         ALOGI("Successfully registered IBiometricsFingerprint");
     }
 
-    ret = IGoodixFPExtendService::registerAsService();
+    ret = IXiaomiFingerprint::registerAsService();
     if (ret != 0) {
-        ALOGE("Failed to register IGoodixFPExtendService (%d)", ret);
+        ALOGE("Failed to register IXiaomiFingerprint (%d)", ret);
         goto fail;
     } else {
-        ALOGI("Successfully registered IGoodixFPExtendService");
+        ALOGI("Successfully registered IXiaomiFingerprint");
     }
 
 fail:
