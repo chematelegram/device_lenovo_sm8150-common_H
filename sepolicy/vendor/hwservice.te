@@ -3,3 +3,5 @@ type nxpese_hwservice, hwservice_manager_type;
 type nxpnfc_hwservice, hwservice_manager_type;
 
 type hal_dms_hwservice, hwservice_manager_type;
+
+type hal_xiaomi_fingerprint_hwservice, hwservice_manager_type;
